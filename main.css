@@ -1,4 +1,13 @@
+*{
+	box-sizing: border-box;
+}
+
+.main-page-wrapper{
+	background: url("./img/1.png") center top no-repeat, url("./img/2.png") right bottom no-repeat;
+}
+
 body {
+	margin: 0;
 	font-family: "Open Sans";
 	color: #fff;
 	font-size: 16px;
@@ -8,23 +17,35 @@ body {
 	-moz-font-smoothing: grayscale;
 }
 
-a {
-	color: inherit;
+html, body {
+	height: 100%;
+	width: 100%;
 }
 
-ul {
-	padding: 0;
-	margin: 0;
-}
 
 ul li {
 	list-style: none;
 }
 
-.wrapper {
-	margin: 0 auto;
-	width: 1202px;
+ul {
+	padding: 0;
+	margin: 0;
+} 
+
+a {
+	color: inherit;
 }
+
+h1, h2, h3, p {
+	margin: 0;
+}
+ 
+
+.container {
+	width: 1139px;
+	margin: 0 auto;
+}
+
 
 .header {
 	height: 60px;
@@ -41,9 +62,11 @@ ul li {
 
 .menu {
 	position: absolute;
+	font-size: 14px;
 	top: 42px;
 	left: 164px;
 }
+
 
 .contacts {
 	position: absolute;
@@ -55,8 +78,11 @@ ul li {
 
 .menu__item {
 	display: inline-block;
-	vertical-align: middle;
-	margin-right: 50px;
+	margin-right: 54px;
+}
+
+.menu__item:last-child {
+	margin-right: 0px;
 }
 
 .menu__link {
@@ -97,7 +123,200 @@ ul li {
 	border-radius: 35px; 
 	padding: 18px 40px;
 	color: #fff;
+	outline: none;
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
+	margin-bottom: 246px;
 }
+
+.features__title {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: bold;
+	width: 273px;
+	margin-bottom: 5px;
+}
+
+.features__item {
+	min-height: 305px;
+	width: 350px;
+	background: white;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 27px;
+	margin-bottom: 127px;
+}
+
+.features__item:last-child{
+	margin-right: 0;
+}
+
+
+.features__icon{
+	min-height: 144px;
+	margin-bottom: 33px;
+}
+
+.features__content{
+	padding: 33px 22px;
+	color: black;
+}
+
+.features__subtitle{
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 23px;
+}
+
+.features__desc-block{
+	display: inline-block;
+	vertical-align: top;
+	width: 90px;
+	margin-right: 30px;
+	font-size: 16px;
+	color: #666666;
+}
+
+.features__desc-bloc:last-child{
+	margin-right: 0;
+}
+
+.features__text{
+	font-size: 14px;
+	color: #303030;
+	padding: 25px 22px;
+}
+
+.features__button {
+	background: #F5170E;
+	border-radius: 35px;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 135px;
+	height: 55px;
+	border: 2px solid transparent;
+	margin-bottom: 26px;
+	margin-left: 24px;
+}
+
+.features__button--border{
+	border-color: #F5170E;
+	background: transparent;
+	color: #F5170E;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 135px;
+	height: 55px;
+	border-radius: 35px;
+	margin-bottom: 26px;
+	margin-left: 24px;
+}
+
+.news__title{
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 51px;
+}
+
+.news__item{
+	width: 545px;
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: top;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 57px;
+}
+
+.news__content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 25px 30px ;
+	min-height: 140px;
+}
+
+.news__date {
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+.new__subtitle{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.paginator{
+	text-align: center;
+	margin-bottom: 152px;
+}
+
+.paginator__display, .paginator__list, .paginator__item {
+	display: inline-block;
+}
+
+.paginator__link{
+	background: transparent;
+	color: white;
+}
+
+
+.about{
+	color: black;
+	margin-top: 152px;
+}
+
+.about__img, .about__content {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 106px;
+}
+
+.about__content{
+	background-image: url(./img/mountains.png);
+	width: 690px;
+	height: 455px;
+	margin-left: -47px;
+	margin-top: 97px;
+	border-radius: 10px;
+	padding: 70px 202px 66px 80px;
+}
+
+.about__text{
+	font-size: 16px;
+	margin-bottom: 43px;
+}
+
+.paginator__link--aktiv{
+	background: white;
+	color: #F5170E;
+	padding: 7px 12px;
+	border-radius: 50%;
+}
+
+.footer {
+	position: relative;
+	height: 93px;
+}
+
+.social{
+	position: absolute;
+	left: 703px;
+	top: 10px;
+}
+
+.social__item{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.social__item:last-child{
+	margin-right: 0px;
+} 
