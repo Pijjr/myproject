@@ -108,7 +108,7 @@ h1, h2, h3, p {
 
 .preview__logo-title{
 		font-size: 72px;
-		font-style: bold;
+		font-weight: bold;
 		line-height: 1.1;
 		margin-bottom: 20px;
 	}
