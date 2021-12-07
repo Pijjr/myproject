@@ -71,15 +71,6 @@ h1, h2, h3, h4, p {
 	left: 164px;
 }
 
-
-.contacts {
-	position: absolute;
-	top: 28px;
-	right: 0px;
-	font-style: normal;
-	text-align: right;
-}
-
 .menu__item {
 	display: inline-block;
 	margin-right: 54px;
@@ -94,8 +85,15 @@ h1, h2, h3, h4, p {
 	text-decoration: none;
 }
 
+.contacts__sh {
+	position: absolute;
+	top: 28px;
+	right: 0px;
+	font-style: normal;
+	text-align: right;
+}
 
-.contacts__phone {
+.contacts__phone-sh {
 	text-decoration: none;
 	font-size: 26px;
 	margin-bottom: 2px;
@@ -356,17 +354,23 @@ h1, h2, h3, h4, p {
 	height: 152px;
 }
 
-.contacts__phone {
+.contacts {
 	position: absolute;
-	top: 30px;
-	right: 0;
+	top: 28px;
+	right: 0px;
 	font-style: normal;
 	text-align: right;
-}	
+}
 
 .contacts__workhours {
 	color: #9A9A9A;
 	font-style: 11px;
+}
+
+.contacts__phone{
+	text-decoration: none;
+	font-size: 26px;
+	margin-bottom: 2px;
 }
 
 .social__item {
