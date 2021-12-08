@@ -300,6 +300,13 @@ h1, h2, h3, h4, p {
 	color: white;
 	margin-right: 13px;
 	text-decoration: none;
+	padding: 7px 12px;
+	border-radius: 50%;
+}
+
+.paginator__link--aktiv{
+	background: white;
+	color: #F5170E;
 }
 
 
@@ -332,13 +339,6 @@ h1, h2, h3, h4, p {
 .about__text{
 	font-size: 16px;
 	margin-bottom: 43px;
-}
-
-.paginator__link--aktiv{
-	background: white;
-	color: #F5170E;
-	padding: 7px 12px;
-	border-radius: 50%;
 }
 
 .footer-container__content{
